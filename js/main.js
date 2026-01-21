@@ -40,9 +40,6 @@ class App {
         // Initialize smooth scroll
         this.initSmoothScroll();
 
-        // Initialize forms
-        this.initForms();
-
         // Initialize modal functionality
         this.initModals();
 
