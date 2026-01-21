@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AmoraPrime - Get in touch for web development, AI solutions, and digital innovation services">
+    <meta name="theme-color" content="#8B5CF6">
+    
+    <title>Contact Us - AmoraPrime | Get Started Today</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <span class="logo__text">Amora</span><span class="logo__accent">Prime</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme__toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme__icon sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="theme__icon moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTACT PAGE ==================== -->
+    <div class="contact-page">
+        <div class="contact-page__bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Header -->
+            <div class="contact-header" data-aos="fade-up">
+                <div class="contact-header__badge">
+                    <span>💬</span>
+                    <span>Get In Touch</span>
+                </div>
+                <h1 class="contact-header__title">
+                    Let's Build Something <span class="gradient-text">Amazing</span>
+                </h1>
+                <p class="contact-header__description">
+                    Tell us about your project and we'll get back to you within 24 hours with a custom solution
+                </p>
+            </div>
+
+            <!-- Form Card -->
+            <div class="form-card" data-aos="fade-up" data-aos-delay="100">
+                <form
+                    id="contact-form"
+                    action="https://formsubmit.co/myamora.ai@gmail.com"
+                    method="POST"
+                    novalidate
+                >
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Service Inquiry - AmoraPrime">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="John Doe"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Email Address <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="john@example.com"
+                            required
+                        >
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div class="form-group">
+                        <label for="phone" class="form-label">
+                            Phone Number <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="form-input" 
+                            placeholder="+1 (234) 567-8900"
+                            required
+                        >
+                    </div>
+
+                    <!-- Service Field -->
+                    <div class="form-group">
+                        <label for="service" class="form-label">
+                            Service Interested In <span class="required">*</span>
+                        </label>
+                        <select id="service" name="service" class="form-select" required>
+                            <option value="">Select a service...</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="AI Chatbot Integration">AI Chatbot Integration</option>
+                            <option value="Portfolio Website">Portfolio Website</option>
+                            <option value="E-Commerce Development">E-Commerce Development</option>
+                            <option value="Mobile App Development">Mobile App Development</option>
+                            <option value="Custom AI Solutions">Custom AI Solutions</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="SEO Services">SEO Services</option>
+                            <option value="Other Services">Other Services</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            Project Details <span class="required">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-textarea" 
+                            placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="form-submit">
+                        <span>Send Message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-card">
+                    <div class="info-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="info-card__title">Email</h3>
+                    <p class="info-card__text">
+                        <a href="mailto:myamora.ai@gmail.com">myamora.ai@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="info-card__title">Response Time</h3>
+                    <p class="info-card__text">Within 24 hours</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="info-card__title">Live Chat</h3>
+                    <p class="info-card__text">Available Mon-Fri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>
