@@ -503,22 +503,55 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+/* Semi-circle positioning - 8 cards around center */
 .card-1 {
-    top: 10%;
-    left: 5%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     animation: floatCard 6s ease-in-out infinite;
 }
 
 .card-2 {
     top: 15%;
-    right: 5%;
+    right: 10%;
     animation: floatCard 7s ease-in-out infinite 1s;
 }
 
 .card-3 {
-    bottom: 10%;
-    left: 10%;
+    top: 40%;
+    right: 0%;
     animation: floatCard 8s ease-in-out infinite 2s;
+}
+
+.card-4 {
+    bottom: 15%;
+    right: 10%;
+    animation: floatCard 6.5s ease-in-out infinite 3s;
+}
+
+.card-5 {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: floatCard 7.5s ease-in-out infinite 4s;
+}
+
+.card-6 {
+    bottom: 15%;
+    left: 10%;
+    animation: floatCard 8.5s ease-in-out infinite 5s;
+}
+
+.card-7 {
+    top: 40%;
+    left: 0%;
+    animation: floatCard 7s ease-in-out infinite 1.5s;
+}
+
+.card-8 {
+    top: 15%;
+    left: 10%;
+    animation: floatCard 6.5s ease-in-out infinite 2.5s;
 }
 
 @keyframes floatCard {
@@ -570,6 +603,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     animation: rotate 20s linear infinite;
+    z-index: 5;
 }
 
 @keyframes rotate {
